@@ -3,10 +3,10 @@ def fusion(tab1: list, tab2: list) -> list:
     while tab1 != [] and tab2 != []:
         if(tab1[0] < tab2[0]): final.append(tab1.pop(0))
         else: final.append(tab2.pop(0))
-    if(tab1 == []):
+    if(tab1 != []):
         for elt in tab1:
             final.append(elt)
-    if(tab2 == []):
+    if(tab2 != []):
         for elt in tab2:
             final.append(elt)
     return final
