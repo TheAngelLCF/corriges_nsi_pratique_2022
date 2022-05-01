@@ -6,7 +6,7 @@ def fusion(tab1: list, tab2: list) -> list:
     if(tab1 != []):
         for elt in tab1:
             final.append(elt)
-    if(tab2 != []):
+    elif(tab2 != []):
         for elt in tab2:
             final.append(elt)
     return final
